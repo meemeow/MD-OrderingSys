@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9FD5C7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <ImageView
+            android:layout_width="276dp"
+            android:layout_height="226dp"
+            android:layout_gravity="top|center_horizontal"
+            android:adjustViewBounds="true"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/textViewMeemeow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/meemeow"
+                android:textAlignment="center"
+                android:textSize="32sp"
+
+                android:textStyle="bold"
+                android:textColor="#113A1E" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="@string/main"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#113A1E"
+            tools:ignore="RtlSymmetry" />
+
+        <Spinner
+            android:id="@+id/spinnerFoods"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:padding="15dp"
+            android:background="@drawable/spinner_background"
+            android:entries="@array/food_items"
+            android:prompt="@string/select_food_prompt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="15dp"
+            android:text="@string/add_ons"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#113A1E"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:id="@+id/linearLayoutCheckboxes"
+            android:layout_width="344dp"
+            android:layout_height="165dp"
+            android:background="@drawable/spinner_background"
+            android:orientation="vertical"
+            android:paddingTop="7dp"
+            android:paddingLeft="15dp"
+            tools:ignore="RtlSymmetry">
+
+            <CheckBox
+                android:id="@+id/checkBoxMashPotato"
+                android:layout_width="wrap_content"
+                android:layout_height="52dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/mash_potato"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxFries"
+                android:layout_width="94dp"
+                android:layout_height="51dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/fries"
+                android:textColor="#000000" />
+
+            <CheckBox
+                android:id="@+id/checkBoxHashbrown"
+                android:layout_width="wrap_content"
+                android:layout_height="49dp"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:text="@string/hashbrown"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingTop="15dp"
+            android:text="@string/drink"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#113A1E"
+            tools:ignore="RtlSymmetry" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDrinks"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/spinner_background"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonCoke"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="52dp"
+                android:padding="10dp"
+                android:text="@string/coke"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonCoffee"
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="52dp"
+                android:padding="10dp"
+                android:text="@string/coffee"
+                android:textColor="#000000" />
+
+            <RadioButton
+                android:id="@+id/radioButtonWater"
+                android:layout_width="113dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:minHeight="52dp"
+                android:padding="10dp"
+                android:text="@string/water"
+                android:textColor="#000000" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:layout_gravity="center"
+            android:text="@string/view"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#113A1E" />
+
+        <TextView
+            android:id="@+id/textViewOrderSummary"
+            android:layout_width="351dp"
+            android:layout_height="141dp" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/submit"
+            android:textColor="#000000"
+            android:backgroundTint="#FFFFFF"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:padding="15dp"
-            android:background="@drawable/spinner_background"
+            android:background="@drawable/background"
             android:entries="@array/food_items"
             android:prompt="@string/select_food_prompt" />
 
@@ -72,12 +72,12 @@
 
         <LinearLayout
             android:id="@+id/linearLayoutCheckboxes"
-            android:layout_width="344dp"
+            android:layout_width="match_parent"
             android:layout_height="165dp"
             android:background="@drawable/spinner_background"
             android:orientation="vertical"
-            android:paddingTop="7dp"
             android:paddingLeft="15dp"
+            android:paddingTop="7dp"
             tools:ignore="RtlSymmetry">
 
             <CheckBox
@@ -130,7 +130,7 @@
 
             <RadioButton
                 android:id="@+id/radioButtonCoke"
-                android:layout_width="114dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:minHeight="52dp"
@@ -140,7 +140,7 @@
 
             <RadioButton
                 android:id="@+id/radioButtonCoffee"
-                android:layout_width="107dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:minHeight="52dp"
@@ -150,7 +150,7 @@
 
             <RadioButton
                 android:id="@+id/radioButtonWater"
-                android:layout_width="113dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:minHeight="52dp"
@@ -172,8 +172,14 @@
 
         <TextView
             android:id="@+id/textViewOrderSummary"
-            android:layout_width="351dp"
-            android:layout_height="141dp" />
+            android:layout_width="match_parent"
+            android:layout_height="214dp"
+            android:background="@drawable/spinner_background"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:textColor="#000000"
+            android:textSize="14sp" />
 
         <Button
             android:id="@+id/buttonSubmit"
@@ -181,6 +187,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="@string/submit"
+            android:layout_marginTop="20dp"
             android:textColor="#000000"
             android:backgroundTint="#FFFFFF"/>
 
